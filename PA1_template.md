@@ -170,6 +170,11 @@ total data moves towards the mean.
 
 ## Are there differences in activity patterns between weekdays and weekends?
 
+To compare activity patterns between weekdays and weekends, added a field that
+classified whether the date was a weekday or a weekend.  Calculated the mean 
+steps per interval for weekdays and weekends.
+
+Plot of mean steps per interval separated by weekday or weekend classification.
 
 
 ```r

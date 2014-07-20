@@ -329,6 +329,12 @@ total data moves towards the mean.</p>
 
 <h2>Are there differences in activity patterns between weekdays and weekends?</h2>
 
+<p>To compare activity patterns between weekdays and weekends, added a field that
+classified whether the date was a weekday or a weekend.  Calculated the mean 
+steps per interval for weekdays and weekends.</p>
+
+<p>Plot of mean steps per interval separated by weekday or weekend classification.</p>
+
 <pre><code class="r">imputedData$weekday &lt;- as.factor(ifelse(weekdays(as.POSIXct(imputedData$date)) %in% 
                                 c(&quot;Saturday&quot;, &quot;Sunday&quot;), &quot;Weekend&quot;, &quot;Weekday&quot;))
 stepsPerIntervalWeekdayDF &lt;- aggregate(steps ~ interval + weekday, data = imputedData, mean)
