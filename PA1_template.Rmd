@@ -3,6 +3,8 @@
 
 ## Loading and preprocessing the data
 
+Required R libraries
+
 ```{r}
 library(ggplot2)
 library(scales)
